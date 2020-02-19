@@ -139,11 +139,11 @@ for i in HomeIDs2016Above25Falls:
     inside the for loop, we apply another indentation.
 """
 
-def PrintHomeNames(list): #define function
+def PrintHomeNames(list, year = 2014): #define function
     print('=============================================')
     for i in list:
         homeName = dataHome.loc[dataHome['cihi_public_hid']==i]
-        print(homeName['name'].values)  
+        print(homeName['name'].values)
 
 PrintHomeNames(HomeIDs2014Above25Falls) #call the function for different years
 PrintHomeNames(HomeIDs2015Above25Falls)

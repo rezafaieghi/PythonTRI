@@ -63,11 +63,11 @@ for patient in patientIDs: #in each iteration, the 'patient' variable will take 
     """
         Some plotting
     """
-    plt.figure()
+#    plt.figure()
     plt.scatter(outputData['Time'],outputData['mos_avg'])
     plt.title(patient)
     plt.xlabel('Time')
     plt.ylabel('MOS_AVG')
     plt.grid()
-    
+    plt.ylim([0,0.5])
     print(patient, 'is done.')
